@@ -1,5 +1,5 @@
 const APP = {
-  ver: "Đinhphu",
+  ver: "    Dphu",
   user: {
     id: 0
   },
@@ -280,10 +280,10 @@ class UI {
     }
     
     // Setup event listeners
-    document.getElementById("Tự Làm(Dphu)").onchange = event => {
+    document.getElementById("autoCheck").onchange = event => {
       APP.cfg.auto = event.target.checked;
       document.getElementById("speedControlContainer").style.display = APP.cfg.auto ? "flex" : "none";
-      sendToast(APP.cfg.auto ? "✅ tự đông Làm Bài đã bật" : "❌ Auto Complete Disabled", 2000);
+      sendToast(APP.cfg.auto ? "✅ Auto Complete Enabled" : "❌ Auto Complete Disabled", 2000);
     };
     
     // Configurar o slider de velocidade
